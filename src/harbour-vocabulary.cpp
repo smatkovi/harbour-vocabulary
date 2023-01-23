@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<SimpleInterface>("harbour.vocabulary.SimpleInterface", 1, 0, "SimpleInterface");
 
     // Connect to DB
-    QString path = QString(QStandardPaths::writableLocation(QStandardPaths::DataLocation));
+    QString path = QString(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
     QDir dir(path);
 
     if(!dir.exists())
